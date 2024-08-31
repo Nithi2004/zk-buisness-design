@@ -1,0 +1,16 @@
+.about-section {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .about-section h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  

@@ -1,0 +1,22 @@
+.technologies {
+    background-color: #1a1a1a;
+    padding: 50px 20px;
+  }
+  
+  .section-title {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .technology-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+  }
+  

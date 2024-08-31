@@ -1,0 +1,45 @@
+.blockchain-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 78px; /* Adjust to your desired distance from the top */
+    right: 90px; /* Adjust to your desired distance from the right */
+    width: 110px; /* Adjust the size to match your design */
+    height: 110px;
+    background-color: transparent;
+    perspective: 1000px;
+  }
+  .block {
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    position: absolute;
+    animation: growShrink 8s infinite ease-in-out;
+    transform-origin: center;
+    transform-style: preserve-3d;
+  }
+  
+  @keyframes growShrink {
+    0%, 100% {
+      transform: scale(0.1) translateZ(0);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(2) translateZ(200px);
+      opacity: 0;
+    }
+  }
+  
+  .block:nth-child(2) {
+    animation-delay: 2s; /* Increased delay to match the longer animation */
+  }
+  .block:nth-child(3) {
+    animation-delay: 4s;
+  }
+  .block:nth-child(4) {
+    animation-delay: 6s;
+  }
+  .block:nth-child(5) {
+    animation-delay: 8s;
+  }

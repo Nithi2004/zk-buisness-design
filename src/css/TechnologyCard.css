@@ -1,0 +1,107 @@
+.technology-card {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: left;
+    border: 1px solid #333;
+    position: relative;
+  }
+  
+  .technology-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    margin: 0;
+    position: relative;
+    padding: 10px;
+    border: 2px solid #fff; /* Border around the title */
+    display: inline-block;
+  }
+  
+  .description {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .content {
+    margin-top: 15px;
+  }
+  
+  /* Horizontal and Vertical Line Logic */
+  .technology-card::before,
+  .technology-card::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    z-index: 0;
+  }
+  
+  .technology-card::before {
+    width: 2px;
+    height: 50px;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .technology-card::after {
+    width: 50px;
+    height: 2px;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+  }
+  
+  /* Horizontal lines only for the first and last cards */
+  .technology-card:first-child::after,
+  .technology-card:last-child::after {
+    display: none;
+  }
+  
+  /* Center Card Adjustments */
+  .center-card::before {
+    height: 100px; /* Increase height for center card */
+    top: -100px;
+  }
+  
+  .center-card::after {
+    left: -100px; /* Adjust position for center card */
+    width: 100px;
+    top: 50%;
+  }
+  
+  /* Horizontal Line on top connecting the cards */
+  .technology-grid::before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+  }
+  
+  .technology-grid {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 100px; /* Space for the top line */
+  }
+  
+  .technology-card:last-child::after {
+    right: -50px;
+    left: auto;
+  }
+  

@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #222;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+  }
+  
+  .zk-zkbp, .recursive-proofs, .mina-protokit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .box {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .line {
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+  }
+  
+  .explore-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Branching Line */
+  .branch-line {
+    width: 3px;
+    height: 35px;
+    background-color: #fff;
+    position: absolute;
+    top: 345px;
+  }
+  
+  .branch-line-horizontal {
+    width: 600px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 345px;
+    left: calc(50% - 300px);
+  }
+  
